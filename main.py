@@ -17,4 +17,4 @@ def convert_text_to_rgb(file):
     return reshape 
 arr = np.array(convert_text_to_rgb("C:\\Users\\Bisrat worku\\Desktop\\rest.txt"))
 img = Image.fromarray(arr.astype('uint8')).convert('RGB')
-img.save('img.png')
+img.save('img.gif')
