@@ -18,3 +18,6 @@ def convert_text_to_rgb(file):
 arr = np.array(convert_text_to_rgb("C:\\Users\\Bisrat worku\\Desktop\\rest.txt"))
 img = Image.fromarray(arr.astype('uint8')).convert('RGB')
 img.save('img.gif')
+
+img = Image.open('img.png')
+img.save('com.png', optimize= True, quality = 50)
