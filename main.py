@@ -5,7 +5,7 @@ def get_type(file):
 
 def convert_text_to_rgb(file):
     binary = []
-    with open(file)as content:
+    with open(file,'r')as content:
         s = content.read()
     for i in s:
         convert = ord(i)
@@ -18,7 +18,8 @@ def convert_text_to_rgb(file):
     binary = np.array(binary)
     reshape = binary.reshape(-1,3)
     return reshape 
-arr = np.array(convert_text_to_rgb("C:\\Users\\Bisrat worku\\Desktop\\ssd.txt"))
+arr = convert_text_to_rgb("C:\\Users\\Bisrat worku\\Desktop\\ssd.txt")
+print(arr)
 img = Image.fromarray(arr.astype('uint8')).convert('RGB')
-img.save('super.png')
+img.save('superm.png')
 
