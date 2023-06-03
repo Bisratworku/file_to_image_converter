@@ -19,7 +19,6 @@ def convert_text_to_rgb(file):
     reshape = binary.reshape(-1,3)
     return reshape 
 arr = convert_text_to_rgb("C:\\Users\\Bisrat worku\\Desktop\\ssd.txt")
-print(arr)
 img = Image.fromarray(arr.astype('uint8')).convert('RGB')
 img.save('superm.png')
 
