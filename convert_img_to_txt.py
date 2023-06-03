@@ -20,4 +20,5 @@ def convert_to_txt(file):
         else:
             text = text + i
     return text
-print(convert_to_txt('p.png'))
+files = open('superman.txt','x')
+files.write(convert_to_txt('superm.png'))
