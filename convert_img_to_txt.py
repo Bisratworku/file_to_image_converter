@@ -1,5 +1,8 @@
 from PIL import Image
 import numpy as np
+file_with_extention = input('input the file you want to convert')
+name = file_with_extention.split('.')[0]
+print(name)
 def convert_to_txt(file):
     im = Image.open(file)
     metrix = np.array(im)
@@ -20,5 +23,5 @@ def convert_to_txt(file):
         else:
             text = text + i
     return text
-files = open('superman.txt','x')
-files.write(convert_to_txt('superm.png'))
+#files = open(f'{name}','x')
+#files.write(convert_to_txt(f'{file_with_extention}.png'))
