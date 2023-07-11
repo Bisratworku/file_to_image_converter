@@ -18,7 +18,7 @@ def convert_text_to_rgb(file):
     binary = np.array(binary)
     reshape = binary.reshape(-1,3)
     return reshape 
-arr = convert_text_to_rgb("C:\\Users\\Bisrat worku\\Desktop\\ssd.txt")
+arr = convert_text_to_rgb("C:\\Users\\Bisrat worku\\Desktop\\asd.txt")
 img = Image.fromarray(arr.astype('uint8')).convert('RGB')
-img.save('superm.png')
+img.save('max.png')
 
